@@ -45,7 +45,7 @@ function renderCars(data) {
     section.className = "car-list-section";
 
   groups[type].forEach(car => {
-    const image = `date/vehicles_image/${car.name}.png`;
+    const image = `date/vehicles_image/${car.name}.jpg`;
     const formattedPrice = Number(car.price).toLocaleString();
 
     const displayName = car.name
