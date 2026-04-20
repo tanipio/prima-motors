@@ -44,7 +44,7 @@ type,name,price
 スポーツ,bestia_gts,100000000
 スポーツ,hotring_hellfire,122000000
 スポーツ,imorgon,216700000
-スポーツ,omnis_e-gt_,179300000
+スポーツ,omnis_e-gt,179300000
 スポーツ,cheetah_classic,108500000
 スポーツ,sm722,96000000
 スポーツ,futo_gtx,104500000
@@ -64,7 +64,7 @@ type,name,price
 スポーツ,itali_gto_stinger_tt,276000000
 スポーツ,8f_drafter,124100000
 スポーツ,tropos_rallye,130000000
-スポーツ,rustom,78000000
+スポーツ,ruston,78000000
 スポーツ,elegy_rh8,142000000
 スポーツ,10f,184000000
 スポーツ,9f_cabrio,170000000
@@ -117,7 +117,7 @@ type,name,price
 スポーツ,paragon,214500000
 スポーツ,buffalo_s,83000000
 スポーツ,lynx,66000000
-スポーツ,comet_rs,140000000
+スポーツ,comet_sr,140000000
 スポーツ,comet_safari,131000000
 スポーツ,euros_x32,80000000
 スポーツ,banshee_gts,280000000
