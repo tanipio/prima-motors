@@ -438,3 +438,116 @@ footer {
   border-color: #ff6fae;
   box-shadow: 0 0 20px rgba(255, 120, 200, 0.65);
 }
+
+/* ===== オーナーズギャラリー ===== */
+
+/* カードを並べる箱 */
+.custom-gallery {
+  width: 90%;
+  max-width: 1200px;
+  margin: 40px auto;
+
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 24px;
+}
+
+/* カード1枚 */
+.custom-card {
+  background: rgba(0, 0, 0, 0.7);
+  border: 2px solid pink;
+  border-radius: 16px;
+  overflow: hidden;
+
+  box-shadow: 0 0 16px purple;
+  transition: 0.3s;
+}
+
+/* マウス乗せたら浮く */
+.custom-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 0 26px purple;
+}
+
+/* 画像 */
+.custom-card img {
+  width: 100%;
+  aspect-ratio: 16 / 9;   /* ←これ神 */
+  object-fit: cover;
+  display: block;
+}
+
+/* テキスト部分 */
+.custom-info {
+  padding: 16px;
+  color: white;
+}
+
+/* 車名 */
+.custom-info h2 {
+  color: pink;
+  margin: 0 0 8px;
+}
+
+/* オーナー名 */
+.custom-owner {
+  color: #ccc;
+  font-size: 14px;
+}
+
+/* コメント */
+.custom-info p {
+  margin: 6px 0;
+}
+
+/* ===== お問い合わせページ ===== */
+
+.contact-page {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 40px 20px 70px;
+}
+
+.contact-page .title {
+  text-align: center;
+  font-size: 36px;
+  color: pink;
+  text-shadow: 0 0 12px white;
+  margin-bottom: 30px;
+}
+
+.contact-card {
+  background: rgba(255, 255, 255, 0.82);
+  border: 2px solid pink;
+  border-radius: 18px;
+  box-shadow: 0 0 18px rgba(160, 60, 180, 0.45);
+  padding: 28px;
+  margin: 26px auto;
+  text-align: center;
+  color: #222;
+}
+
+.contact-card p {
+  font-size: 16px;
+  line-height: 1.8;
+  margin: 10px 0;
+}
+
+.contact-button {
+  display: inline-block;
+  margin: 18px 0;
+  padding: 13px 30px;
+  background: pink;
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 999px;
+  box-shadow: 0 0 14px purple;
+  transition: 0.3s;
+}
+
+.contact-button:hover {
+  background: purple;
+  color: white;
+  transform: scale(1.05);
+}
