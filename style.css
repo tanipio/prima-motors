@@ -423,10 +423,18 @@ footer {
 #search-input {
   display: block;
   width: min(90%, 420px);
-  margin: 20px auto;
-  padding: 12px 16px;
-  border: 2px solid pink;
+  margin: 22px auto;
+  padding: 12px 18px;
+  border: 2px solid #ff9fbd;
   border-radius: 999px;
+  background: rgba(255, 255, 255, 0.85);
   font-size: 16px;
+  text-align: center;
   outline: none;
+  box-shadow: 0 0 14px rgba(255, 150, 210, 0.45);
+}
+
+#search-input:focus {
+  border-color: #ff6fae;
+  box-shadow: 0 0 20px rgba(255, 120, 200, 0.65);
 }
