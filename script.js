@@ -3,6 +3,8 @@ let cars = [];
 let currentFilter = "all";
 let currentSort = "default";
 
+let searchText = "";
+
 function getFilteredAndSortedCars() {
   let result = [...cars];
 
@@ -10,6 +12,12 @@ function getFilteredAndSortedCars() {
   if (currentFilter !== "all") {
     result = result.filter(car => car.type === currentFilter);
   }
+  
+  if (searchText !== "") {
+  result = result.filter(car =>
+    car.name.toLowerCase().includes(searchText.toLowerCase())
+  );
+}
 
   // 並び替え
   if (currentSort === "low") {
@@ -20,6 +28,11 @@ function getFilteredAndSortedCars() {
 
   return result;
 }
+
+document.getElementById("search-input").addEventListener("input", (e) => {
+  searchText = e.target.value;
+  updateView();
+});
 
 function renderCars(data) {
   carList.innerHTML = "";
